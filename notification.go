@@ -26,7 +26,7 @@ func (n *Notification) Push() {
             log.Fatal(err2)
         }
     default:
-        log.Fatalf("%s: not supported")
+        log.Fatalf("%s: not supported", runtime.GOOS)
     }
     fmt.Print("\a")
 }
